@@ -59,7 +59,7 @@
     }
   </style>
 </head>
-<body class="h-full overflow-auto">
+<body class="h-full overflow-x-hidden overflow-y-auto">
   <div id="app-wrapper" class="w-full min-h-full">
     
     <!-- Navigation -->
@@ -106,10 +106,10 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center" style="background: linear-gradient(135deg, #1C352D 0%, #2D4A3E 50%, #3D5A4A 100%);">
+    <section class="relative min-h-screen flex items-center overflow-hidden" style="background: linear-gradient(135deg, #1C352D 0%, #2D4A3E 50%, #3D5A4A 100%);">
       <div class="absolute inset-0 leaf-pattern opacity-50"></div>
-      <div class="absolute top-20 right-10 w-72 h-72 rounded-full opacity-10" style="background: #556B2F; filter: blur(80px);"></div>
-      <div class="absolute bottom-20 left-10 w-96 h-96 rounded-full opacity-10" style="background: #6B8E23; filter: blur(100px);"></div>
+      <div class="absolute top-20 right-2 sm:right-10 w-44 h-44 sm:w-72 sm:h-72 rounded-full opacity-10" style="background: #556B2F; filter: blur(80px);"></div>
+      <div class="absolute bottom-20 -left-8 sm:left-10 w-56 h-56 sm:w-96 sm:h-96 rounded-full opacity-10" style="background: #6B8E23; filter: blur(100px);"></div>
       
       <!-- Decorative Plant SVGs -->
       <div class="absolute bottom-0 left-0 w-full overflow-hidden opacity-20">
@@ -118,33 +118,33 @@
         </svg>
       </div>
       
-      <div class="max-w-7xl mx-auto px-6 py-32 relative z-10">
+      <div class="max-w-7xl mx-auto px-6 py-24 md:py-32 relative z-10">
         <div class="grid lg:grid-cols-2 gap-16 items-center">
           <div class="animate-fade-in">
             <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-8" style="background: rgba(107, 142, 35, 0.2); border: 1px solid rgba(107, 142, 35, 0.3);">
               <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
               <span class="text-emerald-300 text-sm font-medium">Premium Gartengestaltung</span>
             </div>
-            <h1 id="hero-title" class="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
+            <h1 id="hero-title" class="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
               Ihr Garten,<br/>Unsere Leidenschaft
             </h1>
-            <p id="hero-subtitle" class="text-xl text-emerald-100/80 mb-10 max-w-xl leading-relaxed">
+            <p id="hero-subtitle" class="text-lg md:text-xl text-emerald-100/80 mb-10 max-w-xl leading-relaxed">
               Professioneller Gartenbau mit über 15 Jahren Erfahrung. Wir verwandeln Ihre Außenflächen in grüne Oasen der Entspannung.
             </p>
             <div class="flex flex-wrap gap-4">
-              <a href="#contact" class="group px-8 py-4 rounded-full font-semibold text-emerald-900 transition-all hover:scale-105 hover:shadow-xl flex items-center gap-2" style="background: linear-gradient(135deg, #9ACD32 0%, #6B8E23 100%);">
+              <a href="#contact" class="group w-full sm:w-auto justify-center px-8 py-4 rounded-full font-semibold text-emerald-900 transition-all hover:scale-105 hover:shadow-xl flex items-center gap-2" style="background: linear-gradient(135deg, #9ACD32 0%, #6B8E23 100%);">
                 Kostenlose Beratung
                 <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                 </svg>
               </a>
-              <a href="#gallery" class="px-8 py-4 rounded-full font-semibold text-white border-2 border-white/30 hover:bg-white/10 transition-all">
+              <a href="#gallery" class="w-full sm:w-auto text-center px-8 py-4 rounded-full font-semibold text-white border-2 border-white/30 hover:bg-white/10 transition-all">
                 Projekte ansehen
               </a>
             </div>
             
             <!-- Stats -->
-            <div class="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-white/10">
+            <div class="grid grid-cols-3 gap-4 sm:gap-8 mt-12 sm:mt-16 pt-8 border-t border-white/10">
               <div>
                 <div class="text-3xl font-bold text-white">15+</div>
                 <div class="text-emerald-300/70 text-sm">Jahre Erfahrung</div>
